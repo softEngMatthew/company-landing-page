@@ -1,0 +1,227 @@
+/* Colors: background: #ecc19c, 
+    contrast: #1e847f, 
+    black: #000000
+    white: #fff */
+
+/* Fonts: Headlines: Merriweather
+P: Montserrat  */
+
+/* Universal */
+:root{
+    --graffiti: #232323;
+    --graydark: #656565;
+    --graylight: #989898;
+    --purplelight: #7951a8;
+    --purpledark: #69369e;
+}
+
+*{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--graffiti); 
+    text-align: center;
+    color: aliceblue;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+h1, 
+h2,
+h3 {
+    font-family: "Merriweather", serif;
+}
+
+
+/* Nav Section */
+.nav-bar{
+    margin: 0 auto;
+    top: 0;
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: var(--purplelight);
+    z-index: 1;
+    margin-top: 0;
+    border-bottom: 1px solid aliceblue;
+    align-items: center;
+}
+
+.anchor{
+    width: 50%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 50px;
+    color: aliceblue;
+}
+
+.nav-bar li:hover{
+    border: 1px solid var(--graffiti);
+    box-shadow: 2px 2px aliceblue;
+    border-radius: 5px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar img{
+    width: 100px;
+}
+
+/* Banner */
+.banner{
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.banner:after{
+    content: "";
+    background-image: url(./resources/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;    
+}
+
+.banner .content{ 
+    top: 20px;
+    color: aliceblue;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .column1{
+    padding-right: 10px;
+}
+
+.column1 h1{
+    margin-bottom: 1rem;
+}
+
+.banner h3{
+    width: 70%;
+}
+.banner img{
+    width: 70%;
+}
+
+.banner button{
+    padding: 1rem;
+    width: 70%;
+    margin: 10px 5px;
+    background-color: var(--graffiti);
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.banner button:hover{
+    box-shadow: 7px 5px var(--purpledark);
+}
+
+/* Products */
+.products{
+    display: flex;
+    margin: 50px 2%;
+    border-radius: 15px;
+    color: var(--graffiti);
+    padding: 2% 2%;
+    justify-content: space-between;
+}
+
+.products div{
+    padding: 10px 10px;
+}
+
+.products h3{
+    color: var(--purplelight);
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.products p{
+    color: aliceblue;
+}
+
+.products img{
+    width: 90%;
+    padding: 10px px;
+    border-radius: 5px;
+}
+/* Employees */
+.employees{
+    margin-top: 100px;
+    align-items: center;
+    background-color: #69369e;
+    display: flex;
+}
+
+.employees div{
+    padding: 0 2%;
+}
+.employees img{
+    width: 90%;
+    border-radius: 10px;
+    height: auto;
+    margin: 5% 5% 5% 5%;
+}
+
+.employees img:hover{
+    box-shadow: 7px 5px var(--graffiti);
+}
+
+.employees p{
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: var(--purpledark);
+}
+
+#copyright{
+    float: left;
+}
+
+.footer img{
+    width: 150px;
+    border-radius: 5px;
+}
